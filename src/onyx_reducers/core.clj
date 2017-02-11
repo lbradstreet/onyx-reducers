@@ -18,5 +18,6 @@
   (.offer hll 59)
   (.offer hll 59)
   (.cardinality hll)
+  ;; we're going to need a serialize / restore method, along with the replicated log machine method
   (HyperLogLog$Builder/build (.getBytes hll))
   )
